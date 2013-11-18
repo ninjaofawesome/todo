@@ -1,0 +1,1 @@
+I figured out what the password is by reading it backwards, but I had difficulty articulating it as a decoded password.  I'm still not sure why the symbol is necessary, or how I would show that, but I got the answer from one of my classmates.  
