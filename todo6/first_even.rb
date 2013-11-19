@@ -1,14 +1,39 @@
-class Even
+#note to self= check out nested hashes for this project
+@array = [30, 17, 77, 102, 5, 11, 50, 3, 5, 15, 16, 23, 42, 300, 22, 1, 55, 42].uniq!
 
-array = [30, 17, 77, 102]
+def first_even
+#first test section
+puts @array[0]
+	
+#second test section, needs to be tinkered with
+array_2= @array.join(",")
+array_2.insert(0, "50,").to_i
+array_2.split(",")
+# puts array_2[0]
+#puts 5, not 50. 
+puts array_2[0..1]
+#puts 50, but it isn't correct
 
-def first_even(array)
-  puts array[0]
+#this totally doesn't work either. GAAAAAAAHHHHHH....
+array_3= array_2.join(",")
+array_3.insert(0, "16,").to_i
+array_3.split(",")
+puts array_3[0..1]
+
+
 end
 
-array
+first_even
 
-end
+# Totally off.  Starting over.
+# # def first_even(num1)
+#   puts num1.to_s
+# end
+
+# first_even =(number)
+# puts first_even.to_a
+# first_even << [5, 11, 50]
+# puts first_even
 
 #Gonna come back to this idea later.
 # numbers = [30, 17, 77, 102]
