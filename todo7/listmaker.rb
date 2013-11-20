@@ -39,8 +39,13 @@ puts make_list
 # 	y
 # end
 
+# OR
 
-
+# def make_list array
+# 	y = []
+# 	array.map_with_index { |x, index| "#{index + 1}. #{item}"
+#  	}
+# end
 
 # array =	[1, 2, 3, 4, 5, 6]
 # array_2 = array.join(',')
