@@ -47,6 +47,7 @@ puts make_list
 #  	}
 # end
 
+# Something I was playing around with. Disregard
 # array =	[1, 2, 3, 4, 5, 6]
 # array_2 = array.join(',')
 
