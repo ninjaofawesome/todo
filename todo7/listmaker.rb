@@ -11,10 +11,13 @@
 
 
 def make_list
-array = [1, 2, 3, 4, 5, 6].replace(["number 1", "number 2", "number 3", "number 4", "number 5", "number 6"])
+array = [1, 2, 3, 4, 5, 6]
+	array_2 = array.replace(["number 1", "number 2", "number 3", "number 4", "number 5", "number 6"])
+	make_list = array_2.replace(["1. number 1", "2. number 2", "3. number 3", "4. number 4", "5. number 5", "6. number 6"])
 end
 
 puts make_list
+
 
 
 # array =	[1, 2, 3, 4, 5, 6]
