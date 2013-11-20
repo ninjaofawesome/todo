@@ -1,29 +1,46 @@
-#note to self= check out nested hashes for this project
 @array = [30, 17, 77, 102, 5, 11, 50, 3, 5, 15, 16, 23, 42, 300, 22, 1, 55, 42].uniq!
-
+	#gets rid of any repeating numbers
 def first_even
-#first test section
-puts @array[0]
-	
-#second test section, needs to be tinkered with
-array_2= @array.join(",")
-array_2.insert(0, "50,").to_i
-array_2.split(",")
-# puts array_2[0]
-#puts 5, not 50. 
-puts array_2[0..1]
-#puts 50, but it isn't correct
-
-#this totally doesn't work either. GAAAAAAAHHHHHH....
-array_3= array_2.join(",")
-array_3.insert(0, "16,").to_i
-array_3.split(",")
-puts array_3[0..1]
+	@array[0]
+		#returns 30
+		array_2 = @array.split(',')
+		#splits apart the original array
+			array_3 =[]
+			#creates a new array, in which I can shove in whatever I want
+				array_3 << [50, 3, 5, 15, 16, 23, 42, 300, 22, 1, 55, 42, 30, 17, 77, 102, 5, 11]
+					array_3.flatten!
+					
 
 
 end
 
-first_even
+
+#note to self= check out nested hashes for this project
+
+# def first_even
+# #first test section
+# puts @array[0]
+	
+# #second test section, needs to be tinkered with
+# array_2= @array.join(",")
+# array_2.insert(0, "50,").to_i
+# array_2.split(",")
+# # puts array_2[0]
+# #puts 5, not 50. 
+# puts array_2[0..1]
+# #puts 50, but it isn't correct
+
+# #this totally doesn't work either. GAAAAAAAHHHHHH....
+# array_3= array_2.join(",")
+# array_3.insert(0, "16,").to_i
+# array_3.split(",")
+# puts array_3[0..1]
+
+
+# end@array = [30, 17, 77, 102, 5, 11, 50, 3, 5, 15, 16, 23, 42, 300, 22, 1, 55, 42].uniq!
+
+
+# first_even
 
 # Totally off.  Starting over.
 # # def first_even(num1)
