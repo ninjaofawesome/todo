@@ -18,6 +18,28 @@ end
 
 puts make_list
 
+# my answer was probably not correct.  Here's how everyone did it.
+
+# def make_list(array)
+# 	y = []
+# 	number = 0
+# 	array.each do |x|
+# 	number +=1
+# 	y << "#{number}. #{x}"
+# end
+# end
+
+# And here it is refactored:
+
+# def make_list array
+# 	y = []
+# 	array.each_with_index do |x, index|
+# 		y << "#{index+1}. #{x}"
+# 	end
+# 	y
+# end
+
+
 
 
 # array =	[1, 2, 3, 4, 5, 6]
