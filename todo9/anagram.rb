@@ -37,7 +37,7 @@ class Anagram
 			detector(i) == true 
 			item << i
 		end
-
+		#same problem as get_any_code.
 	end
 
 	def find_an_anagram
@@ -48,9 +48,14 @@ class Anagram
 end
 # code = Anagram.new(%w(hello world zombies pants))
   # code = (['ab', 'abc', 'bac'])
-  code = (%w(enlists google inlets banana))
-  #needs a way to say "any number, any letter, any item specified"
+  # code = (%w(enlists google inlets banana))
+  ##needs a way to say "any number, any letter, any item specified"
+  code = Anagram.new(/"([^\"]*)"/)
+
+
 
 # detector = Anagram.new('diaper')
 # detector = Anagram.new('ba')
-detector = Anagram.new (['inlets'])
+# detector = Anagram.new (['inlets'])
+# detector = Anagram.new(/"([^\"]*)"/)
+detector = Anagram.new(/"([^\"]*)"/)
