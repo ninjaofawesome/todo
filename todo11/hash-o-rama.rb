@@ -36,3 +36,9 @@ end
 #this works perfectly!
 another_hash = hash_2.sort{|a,b| a[1] <=> b[1]}
 puts another_hash[0][0]
+
+hash_3 = {}
+
+if hash_3.empty?
+	puts "nil!"
+end
