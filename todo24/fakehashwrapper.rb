@@ -23,8 +23,34 @@ class FakeHashWrapper
 		obj[key] = value
 	end
 
+	# def find_values
+	# 	obj.each {|hash, key| /\b[a]/.match(hash[key])}
+	# end
+
+	# def find_values
+	# 	obj.each do |hash|
+	# 				hash.each do |key, value| 
+	# 					words = []
+	# 					a_words = key.to_s || key.to_sym
+	# 					/\b[a]/.match(a_words)
+	# 					words.push(a_words)
+	# 					p words
+	# 				end
+	# 			end
+	# end
+
 	def find_values
-		obj.each {|hash, key| /\b[a]/.match(hash[key])}
+		obj.each do |hash|
+					hash.each do |key, value| 
+						a_words = key.to_s || key.to_sym
+						answer = /\b[a]/.match(a_words)
+						p answer
+					end
+				end
+	end
+
+	def alphabetize
+
 	end
 
 
@@ -36,11 +62,4 @@ fake_wrap.set_values("Hannah", "most awesomest")
 fake_wrap.set_values("Ashley", "Even more awesome than that")
 fake_wrap.set_values("My Dad", "The best of the best")
 p fake_wrap.find_values
-
-
-
-# obj = {"Blake" => "The best", 
-# 		"Hannah" => "most awesomest", 
-# 		"Ashley" => "Even more awesome than that",
-# 		"My Dad" => "The best of the best"}
 
